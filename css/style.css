@@ -71,28 +71,23 @@ nav a:hover {
 #first-half {
     position: absolute;
     margin-top: 267px;
-}
-
-#first-half>#mix {
+    color: #000000;
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 700;
+    margin-right: 444px;
+}
+
+#first-half>section:first-child {
     font-size: 72px;
     line-height: 96px;
-    color: #000000;
     position: relative;
-    margin-right: 444px;
 }
 
-#first-half>#mix-layout {
-    font-family: 'Amiko';
-    font-style: normal;
-    font-weight: 700;
+#first-half>section:last-child {
     font-size: 24px;
     line-height: 32px;
-    color: #000000;
-    position: relative;
-    margin-right: 444px;
+    position: relative; 
 }
 
 #second-half {
@@ -101,133 +96,108 @@ nav a:hover {
     margin-top: 91px;
 }
 
-#second-half>#box1 {
+#second-half>div{
+    background-color: #EBEF18;
     position: absolute;
+}
+
+#second-half>div:nth-child(1) {
     width: 134px;
     height: 404px;
     top: 132px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box2 {
-    position: absolute;
+#second-half>div:nth-child(2) {
     width: 136px;
     height: 46px;
     top: 75px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box3 {
-    position: absolute;
+#second-half>div:nth-child(3) {
     width: 75px;
     height: 23px;
     top: 44px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box4 {
-    position: absolute;
+#second-half>div:nth-child(4) {
     width: 88px;
     height: 28px;
     top: 547px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box5 {
-    position: absolute;
+#second-half>div:nth-child(5) {
     width: 25px;
     height: 26px;
     top: 582px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box6 {
-    position: absolute;
+#second-half>div:nth-child(6) {
     width: 25px;
     height: 26px;
     top: 582px;
     left: 32px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box7 {
-    position: absolute;
+#second-half>div:nth-child(7) {
     width: 246px;
     height: 352px;
     top: 44px;
     left: 149px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box8 {
-    position: absolute;
+#second-half>div:nth-child(8) {
     width: 123px;
     height: 212px;
     top: 412px;
     left: 149px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box9 {
-    position: absolute;
+#second-half>div:nth-child(9) {
     width: 55px;
     height: 105px;
     top: 412px;
     left: 286px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box10 {
-    position: absolute;
+#second-half>div:nth-child(10) {
     width: 110px;
     height: 58px;
     top: 524px;
     left: 286px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box11 {
-    position: absolute;
+#second-half>div:nth-child(11) {
     width: 55px;
     height: 105px;
     top: 412px;
     left: 382px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box12 {
-    position: absolute;
+#second-half>div:nth-child(12) {
     width: 28px;
     height: 198px;
     top: 198px;
     left: 409px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box13 {
-    position: absolute;
+#second-half>div:nth-child(13) {
     width: 28px;
     height: 55px;
     top: 132px;
     left: 409px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box14 {
-    position: absolute;
+#second-half>div:nth-child(14) {
     width: 28px;
     height: 55px;
     top: 66px;
     left: 409px;
-    background-color: #EBEF18;
 }
 
-#second-half>#box15 {
-    position: absolute;
+#second-half>div:nth-child(15) {
     width: 28px;
     height: 55px;
     left: 409px;
-    background-color: #EBEF18;
 }
 
 #footer-for-layout1 {
@@ -255,7 +225,7 @@ nav a:hover {
     right: 0;
 }
 
-#main-for-layout2>#side-bar>#box1 {
+#side-bar>div:first-child {
     width: 80px;
     height: 80px;
     background-color: #000000;
@@ -264,7 +234,7 @@ nav a:hover {
     position: absolute;
 }
 
-#main-for-layout2>#side-bar>#box2 {
+#side-bar>div:nth-child(2) {
     width: 80px;
     height: 80px;
     background-color: #ffffff;
@@ -272,7 +242,7 @@ nav a:hover {
     position: absolute;
 }
 
-#main-for-layout2>#side-bar>#box3 {
+#side-bar>div:nth-child(3) {
     width: 80px;
     height: 80px;
     background-color: #000000;
@@ -306,24 +276,24 @@ nav a:hover {
     text-decoration: none;
 }
 
-.grey-box {
+#container-of-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+#container-of-boxes > div > div{
     width: 457px;
     height: 299px;
     background-color: #C4C4C4;
     margin-bottom: 70px;
 }
 
-#container-of-boxes {
-    display: flex;
-    justify-content: center;
-}
-
-#left-side {
+#container-of-boxes > div:first-child {
     margin-right: 55px;
     margin-top: 119px;
 }
 
-#right-side {
+#container-of-boxes > div:last-child{
     margin-right: 151px;
     margin-top: 287px;
 }
@@ -409,7 +379,7 @@ nav a:hover {
 
 /* ----------------------------layout-3-media-query----------------------------- */
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
  
     #main-for-layout3 {
          height: 1860px; 
