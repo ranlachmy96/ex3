@@ -5,6 +5,7 @@ let letter1 = null;
 let letter2 = null;
 let box1, box2;
 let letterholder;
+let startingWord = "Start/ADD";
 class Box {
     constructor() {
         this.width = "80px";
@@ -17,6 +18,18 @@ class Box {
         return parseInt(this.height) + numBoxes * 20 + "px";
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const startingWordElement = document.createElement("div");
+    startingWordElement.style.color = "#FFFFFF";
+    startingWordElement.style.fontFamily = "Amiko";
+    startingWordElement.style.fontSize = "14px";
+    startingWordElement.style.display = "flex";
+    startingWordElement.style.justifyContent = "center";
+    startingWordElement.style.alignItems = "center";
+    startingWordElement.style.height = "100%";
+    startingWordElement.innerHTML = startingWord;
+    document.getElementsByTagName("section")[0].appendChild(startingWordElement);
+});
 function toggleLetterDisplay() {
     let letterSpan = this.querySelector("span");
     if (letterSpan.style.display === "none" && letter1 == null) {
@@ -38,7 +51,7 @@ function toggleLetterDisplay() {
             letter1 = null;
             letter2 = null;
             box1 = undefined;
-            box2 =undefined;
+            box2 = undefined;
         }
         else {
             setTimeout(function () {
@@ -49,7 +62,7 @@ function toggleLetterDisplay() {
                 letter1 = null;
                 letter2 = null;
                 box1 = undefined;
-                box2 =undefined;
+                box2 = undefined;
             }, 1000);
             box1.style.backgroundColor = "red";
             box2.style.backgroundColor = "red";
