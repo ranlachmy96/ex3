@@ -333,9 +333,23 @@ nav a:hover {
 #main-for-layout3 {
     height: 1460px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 300px;
 }
 
-#main-for-layout3>#right-side-bar {
+#main-bar{
+    height: 65%;
+    width: 68%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#right-side-bar {
     height: 100%;
     background-color: rgba(24, 71, 239, 0.3);
     width: 104px;
@@ -344,12 +358,11 @@ nav a:hover {
     right: 0;
 }
 
-#main-for-layout3>#left-side-bar {
+#left-side-bar {
     height: 100%;
     background-color: #E5E5E5;
     width: 372px;
     position: absolute;
-    top: 0;
     left: 0;
 }
 
@@ -361,11 +374,11 @@ nav a:hover {
     left: 76%;
 }
 
-#main-for-layout3>#down-bar {
+#down-bar {
     width: 100%;
     height: 463px;
     background-color: #EBEF18;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
 }
@@ -380,9 +393,14 @@ nav a:hover {
 /* ----------------------------layout-3-media-query----------------------------- */
 
 @media (max-width: 767px) {
- 
     #main-for-layout3 {
-         height: 1860px; 
+        min-width: 100vw;
+        max-width: 100vw; 
+         display: flex;
+         flex-flow: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         padding-left: 0; 
     }
 
     #main-for-layout3>#right-side-bar {
@@ -392,6 +410,19 @@ nav a:hover {
     #main-for-layout3>#left-side-bar {
         width: 100%;
         height: 105px;
+        position: relative;
+    }
+
+    #main-bar{
+        height: 65%;
+        width: 68%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+        gap: 20px;
     }
 
     #left-side-bar nav ul {
@@ -400,5 +431,25 @@ nav a:hover {
 
     #left-side-bar .red-dot {
         left: 76%;
+    }
+
+    #footer-for-layout3 {
+        width: 100%;
+        background-color: #000000;
+        height: 41px;
+        bottom: 0;
+        position: relative;
+    }
+
+    #down-bar {
+        width: 100%;
+        height: 463px;
+        background-color: #EBEF18;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    #footer-for-layout3 {
+        position: relative;
     }
 }
