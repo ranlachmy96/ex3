@@ -5,7 +5,7 @@ let letter1 = null;
 let letter2 = null;
 let box1, box2;
 let letterholder;
-let startingWord = "Start/ADD";
+let startingWord = "Start/Add";
 class Box {
     constructor() {
         this.width = "80px";
